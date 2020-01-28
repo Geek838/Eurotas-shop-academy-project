@@ -1,0 +1,211 @@
+html {
+    font-size: 18px;
+}
+
+
+
+
+.navbar-fixed-top.scrolled {
+    background-color: rgba(17, 16, 16, 0.849) !important;
+    transition: background-color 200ms linear;
+
+  }
+
+.navbar-brand {
+    max-width: 140px ;
+    height: auto;
+}
+
+.navbar-brand img {
+    max-width: 100% ;
+}
+
+.dropdown-item > img {
+    max-width: 50%;
+}
+
+
+.big-dropdown {
+    position: absolute;
+    width: 95vw;
+    left: -700px;
+}
+
+.bg-image {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background:url(http://blueskytechco.com/eurotas/wp-content/uploads/2019/03/banner_shop-1.jpg) center center / cover;
+}
+
+
+.headings {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+.search-rounded {
+    border-radius: 10px;
+    background: transparent;
+}
+
+.search-rounded::placeholder {
+    color: white;
+}
+
+
+.aside-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+    background: rgb(255, 8, 0);
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background:rgb(255, 8, 0);
+    cursor: pointer;
+  }
+
+  
+
+  .colors {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: #4CAF50;
+      margin-right: 8px;
+      margin-top: 8px;
+      border: 1px solid transparent;
+  }
+
+  .colors:hover {
+    border: 3px solid rgb(255, 0, 0);
+  }
+
+  .size-container button {
+      width: 75px;
+      height: 75px;
+  }
+
+  .shoe-image img {
+      max-width: 100%;
+  }
+
+  .slider-cont {
+      display: none;
+      overflow: hidden;
+      text-align: center;
+  }
+
+  .slider-cont img {
+
+    width: 32%;
+  }
+
+  .shoe-container:hover .slider-cont{
+    display: block;
+  }
+
+  .btn-rounded {
+      border-radius: 15px;
+  }
+
+  .bg-black {
+      background-color: black;
+  }
+
+  .hidden-icons {
+      display: none ;
+      position: absolute;
+      top:90px;
+      left: 50px;
+
+  }
+
+  .shoe-container:hover .hidden-icons {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .pay-icon {
+      font-size: 2rem;
+  }
+
+  .bg-darkish {
+      background-color: #222;
+  }
+
+ 
+
+
+
+
+
+ @media (max-width:992px) {
+     .aside {
+         display: none;
+     }
+
+     .shoe-container:hover .slider-cont{
+        display: none;
+      }
+
+      
+
+      .filters {
+          flex-direction: column !important;
+      }
+
+      .filters span {
+          margin-top: 10px;
+      }
+
+      .image-drop {
+          display: none;
+      }
+
+      .secondary-drop {
+          display: none;
+      }
+
+      .hide {
+          display: none;
+      }
+
+      .bg-image {
+          width: 100vw !important;
+      }
+
+      .hidden-icons {
+          display: none !important;
+      }
+ }
