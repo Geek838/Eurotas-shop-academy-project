@@ -24,6 +24,10 @@ html {
     max-width: 50%;
 }
 
+.dropdown-item:hover{
+    background-color: transparent !important;
+}
+
 
 .big-dropdown {
     position: absolute;
@@ -164,7 +168,11 @@ html {
       background-color: #222;
   }
 
+  .shop-bnt,.rnd-bnt {
+      cursor: pointer;
+  }
  
+
 
 
 

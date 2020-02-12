@@ -7,7 +7,8 @@
   <script src="https://kit.fontawesome.com/3d277558e9.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
   <title>Eurotas</title>
 </head>
 
@@ -40,6 +41,7 @@
                   <a class="dropdown-item " href="#">Lorem, ipsum dolor.</a>
                   <a class="dropdown-item " href="#">Lorem, ipsum dolor.</a>
                 </div>
+              </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
@@ -223,19 +225,19 @@
                         src="https://blueskytechco.com/eurotas/wp-content/uploads/2017/04/POD-S3.1-Shoes-01-500x500.jpg"
                         alt="...">
                       <img
-                        src="https://blueskytechco.com/eurotas/wp-content/uploads/2017/04/POD-S3.1-Shoes-01-500x500.jpg"
+                        src="https://images.unsplash.com/photo-1561909848-977d0617f275?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
                         alt="...">
                     </div>
                     <div class="carousel-item">
                       <img
-                        src="https://blueskytechco.com/eurotas/wp-content/uploads/2017/04/POD-S3.1-Shoes-01-500x500.jpg"
-                        class=" w-33" alt="...">
+                              src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/92/526223/1.jpg?1191"
+                              alt="...">
                       <img
-                        src="https://blueskytechco.com/eurotas/wp-content/uploads/2017/04/POD-S3.1-Shoes-01-500x500.jpg"
-                        class=" w-33" alt="...">
+                              src="https://blueskytechco.com/eurotas/wp-content/uploads/2017/04/POD-S3.1-Shoes-01-500x500.jpg"
+                              alt="...">
                       <img
-                        src="https://blueskytechco.com/eurotas/wp-content/uploads/2017/04/POD-S3.1-Shoes-01-500x500.jpg"
-                        class=" w-33" alt="...">
+                              src="https://images.unsplash.com/photo-1561909848-977d0617f275?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+                              alt="...">
                     </div>
 
                   </div>
@@ -880,7 +882,7 @@
   </footer>
   <footer class="bg-black">
     <div class="container-fluid">
-      <div class="row ">
+      <div class="row">
         <div class="col-lg-3 col-md-12">
           <a href="#" class="nav-link text-white small">Copyright © 2020</a>
 
@@ -925,58 +927,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
   </script>
-
-
-
-  <script>
-    $(function () {
-      $(document).scroll(function () {
-        var $nav = $(".navbar-fixed-top");
-        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-      });
-    });
-    $('.dropdown').on('show.bs.dropdown', function (e) {
-      var $dropdown = $(this).find('.dropdown-menu');
-      var orig_margin_top = parseInt($dropdown.css('margin-top'));
-      $dropdown.css({
-        'margin-top': (orig_margin_top + 10) + 'px',
-        opacity: 0
-      }).animate({
-        'margin-top': orig_margin_top + 'px',
-        opacity: 1
-      }, 300, function () {
-        $(this).css({
-          'margin-top': ''
-        });
-      });
-    });
-    $('.dropdown').on('hide.bs.dropdown', function (e) {
-      var $dropdown = $(this).find('.dropdown-menu');
-      var orig_margin_top = parseInt($dropdown.css('margin-top'));
-      $dropdown.css({
-        'margin-top': orig_margin_top + 'px',
-        opacity: 1,
-        display: 'block'
-      }).animate({
-        'margin-top': (orig_margin_top + 10) + 'px',
-        opacity: 0
-      }, 300, function () {
-        $(this).css({
-          'margin-top': '',
-          display: ''
-        });
-      });
-    });
-
-    $(function () {
-      var smallImage = $('.carousel-item');
-      var image = $('.thumbnail');
-      smallImage.click(function () {
-        image.attr('src',
-          'https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/92/526223/1.jpg?1191');
-      })
-    });
-  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/js/mdb.min.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
